@@ -1,3 +1,4 @@
 ﻿<Properties>
-  <WatchEntry0 value="WebBrowser" />
+  <WatchEntry0 value="Parameter(&quot;strKeyword&quot;)" />
+  <WatchEntry1 value="Browser(&quot;WebBrowser&quot;).Page(&quot;SearchResults&quot;).WebElement(&quot;NoResultsHeader&quot;).fnContains(&quot;outeretxt&quot;, strNoResult)" />
 </Properties>

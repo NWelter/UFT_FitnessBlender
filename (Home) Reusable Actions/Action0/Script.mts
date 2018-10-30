@@ -5,3 +5,4 @@ RunAction "Hover_MyFitness", oneIteration
 RunAction "Redirect_Home", oneIteration
 RunAction "Verify_FitnessBlenderHeader", oneIteration
 RunAction "Hover_MyFitnessLoggedUser", oneIteration
+RunAction "Check_SearchingResults", oneIteration
