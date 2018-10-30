@@ -1,0 +1,111 @@
+[General]
+Type=Tulip
+RunType=ActiveScript
+DefaultCfg=default.cfg
+DefaultRunLogic=default.usp
+ParamRightBrace=>
+ParamLeftBrace=<
+NewFunctionHeader=1
+MinorVersion=0
+MajorVersion=6	
+DevelopTool=AQT
+
+[Actions]
+Action0=Action0\Script.mts
+NavigateToSubpages=Action1\Script.mts
+Login [(Main) Reusable Actions]=Action4\Script.mts
+Verify_WorkoutsAndPrograms [(Workouts&Programs) Reusable Actions]=Action1\Script.mts
+Navigate_WorkoutsAndPrograms [(Workouts&Programs) Reusable Actions]=Action2\Script.mts
+Hover_WorkoutsAndProgramsDropdown [(Home) Reusable Actions]=Action4\Script.mts
+Verify_WorkoutVideos [(WorkoutVideos) Reusable Actions]=Action1\Script.mts
+Navigate_WorkoutVideos [(WorkoutVideos) Reusable Actions]=Action2\Script.mts
+Verify_WorkoutPrograms [(WorkoutPrograms) Reusable Actions]=Action1\Script.mts
+Navigate_WorkoutPrograms [(WorkoutPrograms) Reusable Actions]=Action2\Script.mts
+Verify_MealPlans [(MealPlans) Reusabe Actions]=Action1\Script.mts
+Navigate_MealPlans [(MealPlans) Reusabe Actions]=Action2\Script.mts
+Verify_HealthyLiving [(HealthyLiving) Reusable Actions]=Action1\Script.mts
+Navigate_HealthyLiving [(HealthyLiving) Reusable Actions]=Action2\Script.mts
+Hover_HealthyLivingDropdown [(Home) Reusable Actions]=Action5\Script.mts
+Verify_Fitness [(Fitness) Reusable Actions]=Action1\Script.mts
+Navigate_Fitness [(Fitness) Reusable Actions]=Action2\Script.mts
+Verify_Health [(Health) Reusable Actions]=Action1\Script.mts
+Navigate_Health [(Health) Reusable Actions]=Action2\Script.mts
+Verify_HealthyRecipes [(Healthy Recipes) Reusable Actions]=Action1\Script.mts
+Navigate_HealthyRecipes [(Healthy Recipes) Reusable Actions]=Action2\Script.mts
+Verify_Before&After [(Before&After) Reusable Actions]=Action1\Script.mts
+Navigate_BeforeAndAfter [(Before&After) Reusable Actions]=Action2\Script.mts
+Verify_WeightLoss [(WeightLoss) Reusable Actions]=Action1\Script.mts
+Navigate_WeightLoss [(WeightLoss) Reusable Actions]=Action2\Script.mts
+Verify_Community [(Community) Reusable Actions]=Action1\Script.mts
+Navigate_Community [(Community) Reusable Actions]=Action2\Script.mts
+Verify_Blog [(Blog) Reusable Actions]=Action1\Script.mts
+Navigate_Blog [(Blog) Reusable Actions]=Action2\Script.mts
+Verify_About [(About) Reusable Actions]=Action1\Script.mts
+Navigate_About [(About) Reusable Actions]=Action2\Script.mts
+Hover_MyFitness [(Home) Reusable Actions]=Action6\Script.mts
+Verify_Join [(Main) Reusable Actions]=Action5\Script.mts
+Navigate_Join [(Main) Reusable Actions]=Action7\Script.mts
+Verify_SignIn [(Main) Reusable Actions]=Action6\Script.mts
+Navigate_SignIn [(Main) Reusable Actions]=Action8\Script.mts
+Verify_Cart [(Cart) Reusable Actions]=Action1\Script.mts
+Navigate_Cart [(Cart) Reusable Actions]=Action2\Script.mts
+Redirect_Home [(Home) Reusable Actions]=Action7\Script.mts
+Verify_FitnessBlenderHeader [(Home) Reusable Actions]=Action8\Script.mts
+
+[VuserProfiles]
+Profiles=Default Profile
+
+[CfgFiles]
+Default Profile=default.cfg
+
+[RunLogicFiles]
+Default Profile=default.usp
+
+[Rendezvous]
+
+[Transactions]
+
+[ActiveScript]
+Lang=none
+
+[TulipInfo]
+ProductName=Micro Focus Unified Functional Testing
+Version=14.50
+
+[TulipAddins]
+Database=
+File Content=
+Insight=
+Windows Applications=
+TEA=
+Web=
+XML=
+
+[ExtraFiles]
+Test.tsp=
+Default.xls=
+Parameters.mtr=
+Action0\Script.mts=
+Action0\Resource.mtr=
+Action0\ObjectRepository.bdb=
+Action1\Script.mts=
+Action1\Resource.mtr=
+Action1\ObjectRepository.bdb=
+Action4\Script.mts=
+Action4\Resource.mtr=
+Action4\ObjectRepository.bdb=
+Action2\Script.mts=
+Action2\Resource.mtr=
+Action2\ObjectRepository.bdb=
+Action5\Script.mts=
+Action5\Resource.mtr=
+Action5\ObjectRepository.bdb=
+Action6\Script.mts=
+Action6\Resource.mtr=
+Action6\ObjectRepository.bdb=
+Action7\Script.mts=
+Action7\Resource.mtr=
+Action7\ObjectRepository.bdb=
+Action8\Script.mts=
+Action8\Resource.mtr=
+Action8\ObjectRepository.bdb=

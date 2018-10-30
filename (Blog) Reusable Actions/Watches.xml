@@ -1,0 +1,4 @@
+﻿<Properties>
+  <WatchEntry0 value="Browser(&quot;WebBrowser&quot;).Page(&quot;Blog&quot;).WebElement(&quot;BlogHeader&quot;).exist" />
+  <WatchEntry1 value="Browser(&quot;WebBrowser&quot;).Page(&quot;Blog&quot;).WebElement(&quot;BlogHeader&quot;).exist" />
+</Properties>

@@ -1,0 +1,1 @@
+﻿RunAction "CreateNewAccount", oneIteration, Parameter("strBrowser"), Parameter("strURL"), Parameter("strFirstName"), Parameter("strLastName"), Parameter("strUsername"), Parameter("strPassword"), Parameter("strConfirmPassword"), Parameter("strDashboardHeader")

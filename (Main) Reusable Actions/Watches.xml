@@ -1,0 +1,6 @@
+﻿<Properties>
+  <WatchEntry0 value="WebBrowser" />
+  <WatchEntry1 value="Browser(&quot;WebBrowser&quot;).Page(&quot;Join&quot;).WebElement(&quot;Recaptcha&quot;).GetROProperty(&quot;aria-checked&quot;)" />
+  <WatchEntry2 value="strRandomUsername " />
+  <WatchEntry3 value="strRandomEmail" />
+</Properties>

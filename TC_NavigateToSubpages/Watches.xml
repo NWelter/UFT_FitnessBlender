@@ -1,0 +1,4 @@
+﻿<Properties>
+  <WatchEntry0 value="&quot;Navigate_BeforeAndAfter [(BeforeAndAfter) Reusable Actions]'" />
+  <WatchEntry1 value="strRunActionStatus = RunAction (&quot;Navigate_Before&amp;After [(Before&amp;After) Reusable Actions]&quot;, oneIteration)" />
+</Properties>

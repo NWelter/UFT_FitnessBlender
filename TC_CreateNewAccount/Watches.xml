@@ -1,0 +1,3 @@
+﻿<Properties>
+  <WatchEntry0 value="fnContains(Browser(&quot;WebBrowser&quot;).Page(&quot;Dashboard&quot;).WebElement(&quot;ConfirmHeader&quot;), &quot;outertext&quot;, strInfoHeader)" />
+</Properties>

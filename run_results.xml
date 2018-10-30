@@ -1,0 +1,1431 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>[screenshot] Close all browsers</Name>
+    <Description>All browsers are closed</Description>
+    <StartTime>2018-10-22 12:20:50</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\b5313859-881b-400a-b8ad-3cff9f8c3713.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Debug info</Name>
+    <Description>Script is executed localy, CloseBrowsers and CheckAppStart methods are skipped!</Description>
+    <StartTime>2018-10-22 12:20:50</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>URL address</Name>
+    <Description>Browser will be opened with following URL: https://www.fitnessblender.com/</Description>
+    <StartTime>2018-10-22 12:20:50</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Browser version</Name>
+    <Description>Browser version: Chrome 69.0</Description>
+    <StartTime>2018-10-22 12:21:01</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Open 'chromenormal' on URL 'https://www.fitnessblender.com/'</Name>
+    <Description>'Browser correctly opened</Description>
+    <StartTime>2018-10-22 12:21:01</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\3c26f9ba-80c4-4c08-aebe-db8d4ef86a27.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>[screenshot] Open 'chromenormal' on URL 'https://www.fitnessblender.com/'</Name>
+    <Description>'Browser correctly opened</Description>
+    <StartTime>2018-10-22 12:21:01</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\b36837ef-d564-42cc-bcbc-adde3e37ad6e.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Login [(Main) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:20:44</StartTime>
+    <Duration>17</Duration>
+    <Result>Passed</Result>
+    <InputParameters>
+      <Parameter name="strBrowser" value="chromenormal" type="System.String" />
+      <Parameter name="strURL" value="https://www.fitnessblender.com/" type="System.String" />
+      <Parameter name="strUsername" value="GerwazyMscibor" type="System.String" />
+      <Parameter name="strPassword" value="5bbf00a87c0ebe7aa74b47cf70bbb5a91b95ee77e7139ee1" type="System.String" />
+    </InputParameters>
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Verify elements on Fitness Blender navbar header</Name>
+    <Description>Current elements on Fitness Blender navbar header are displayed:  
+FitnessBlenderHeader, 
+LogoButton, 
+Workouts&amp;ProgramsDropdown, 
+HealthyLivingDropdown, 
+Community, 
+Blog, 
+About, 
+MyFitness, 
+ScopeIcon, 
+ShoppingbagIcon</Description>
+    <StartTime>2018-10-22 12:21:02</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\1a467b48-e03f-4a5d-981c-e2fb9ae35475.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_FitnessBlenderHeader [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:02</StartTime>
+    <Duration>0</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_WorkoutsAndPrograms [(Workouts&amp;Programs) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:03</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Workouts&amp;Programs dropdown</Name>
+    <Description>Workouts&amp;Programs subpage is displayed.
+Current sections are available:  
+NewestProgramsHeader, 
+NewestProgramsSection, 
+NewestWorkoutVideoHeader, 
+NewestWorkoutVideosSection, 
+MealPlansHeader, 
+MealPlansSection, 
+BestFatLossProgramsHeader, 
+BestFatLossProgramsSection, 
+HIITWorkoutsHeader, 
+HIITWorkoutsSection, 
+StrengthWorkoutsHeader, 
+StrengthWorkoutsSection, 
+BeginnerWorkoutsHeader, 
+BeginnerWorkoutsSection</Description>
+    <StartTime>2018-10-22 12:21:07</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\2a2c8170-838a-4811-bc04-e8b1b0d0cf57.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_WorkoutsAndPrograms [(Workouts&amp;Programs) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:02</StartTime>
+    <Duration>5</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over Workouts&amp;Programs dropdown</Name>
+    <Description>Workouts&amp;Programs dropdown is displayed.
+Current subtabs are displayed:  
+WorkoutVideoSubtab, 
+WorkoutProgramsSubtab, 
+MealPlansSubtab</Description>
+    <StartTime>2018-10-22 12:21:08</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\ee3c931e-5f97-4e2c-b240-346a28117e07.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_WorkoutsAndProgramsDropdown [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:07</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over Workouts&amp;Programs dropdown</Name>
+    <Description>Workouts&amp;Programs dropdown is displayed.
+Current subtabs are displayed:  
+WorkoutVideoSubtab, 
+WorkoutProgramsSubtab, 
+MealPlansSubtab</Description>
+    <StartTime>2018-10-22 12:21:08</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\1d1d3620-ed01-42ff-82b7-10f07a3b69d5.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_WorkoutsAndProgramsDropdown [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:08</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_WorkoutVideos [(WorkoutVideos) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:09</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Workout Videos subtab.</Name>
+    <Description>Workout Videos subpage is displayed.
+Current elements are displayed:  
+FreeWorkoutVideosHeader, 
+FilterSearchVideoPanel, 
+WorkoutVideosSection</Description>
+    <StartTime>2018-10-22 12:21:18</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\17301f02-536c-405f-88a7-96376d4f2a87.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_WorkoutVideos [(WorkoutVideos) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:08</StartTime>
+    <Duration>10</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over Workouts&amp;Programs dropdown</Name>
+    <Description>Workouts&amp;Programs dropdown is displayed.
+Current subtabs are displayed:  
+WorkoutVideoSubtab, 
+WorkoutProgramsSubtab, 
+MealPlansSubtab</Description>
+    <StartTime>2018-10-22 12:21:31</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\d597ecfc-774a-4c72-9629-aff285dde318.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_WorkoutsAndProgramsDropdown [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:19</StartTime>
+    <Duration>12</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_WorkoutPrograms [(WorkoutPrograms) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:32</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Workout Programs subtab.</Name>
+    <Description>Workout Programs subpage is displayed.
+Current elements are displayed:  
+WorkoutProgramsHeader, 
+FilterSearchProgramPanel, 
+ProgramsVideosSection</Description>
+    <StartTime>2018-10-22 12:21:40</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\ec35197e-c81f-498e-842b-05338ee0e9bf.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_WorkoutPrograms [(WorkoutPrograms) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:19</StartTime>
+    <Duration>21</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over Workouts&amp;Programs dropdown</Name>
+    <Description>Workouts&amp;Programs dropdown is displayed.
+Current subtabs are displayed:  
+WorkoutVideoSubtab, 
+WorkoutProgramsSubtab, 
+MealPlansSubtab</Description>
+    <StartTime>2018-10-22 12:21:41</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\f317934a-5212-478b-87b4-bf1e5e7f21cb.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_WorkoutsAndProgramsDropdown [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:40</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_MealPlans [(MealPlans) Reusabe Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:41</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Meal Plans subtab.</Name>
+    <Description>Meal Plans subpage is displayed.
+Current elements are displayed:  
+MealPlansHeader, 
+MainSection, 
+FeaturedHeader, 
+FeaturedSidebar, 
+FollowUsHeader, 
+SocialMediaContainer, 
+Facebook, 
+Google+, 
+Instagram, 
+Pinterest, 
+Twitter, 
+Youtube</Description>
+    <StartTime>2018-10-22 12:21:43</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\59070997-69d1-415b-9092-37888369b77a.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_MealPlans [(MealPlans) Reusabe Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:40</StartTime>
+    <Duration>3</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_HealthyLiving [(HealthyLiving) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:43</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Healthy Living dropdown</Name>
+    <Description>Healthy Living subpage is displayed.
+Current sections are available:  
+FitnessHeader, 
+FitnessSection, 
+HealthHeader, 
+HealthSection, 
+HealthyRecipesHeader, 
+HealthyRecipesSection, 
+Before&amp;AfterHeader, 
+Before&amp;AfterSection, 
+WeightLossHeader, 
+WeightLossSection</Description>
+    <StartTime>2018-10-22 12:21:46</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\e1a3634c-3657-4e0b-903f-5239b2c8c536.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_HealthyLiving [(HealthyLiving) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:43</StartTime>
+    <Duration>3</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over Healthy Living dropdown</Name>
+    <Description>Healthy Living dropdown is displayed.
+Current subtabs are displayed:  
+FitnessSubtab, 
+HealthSubtab, 
+HealthyRecipesSubtab, 
+Before&amp;AfterSubtab, 
+WeightLossSubtab</Description>
+    <StartTime>2018-10-22 12:21:47</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\07f2dfef-39fc-4a44-a4a7-a793c0144a99.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_HealthyLivingDropdown [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:46</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over Healthy Living dropdown</Name>
+    <Description>Healthy Living dropdown is displayed.
+Current subtabs are displayed:  
+FitnessSubtab, 
+HealthSubtab, 
+HealthyRecipesSubtab, 
+Before&amp;AfterSubtab, 
+WeightLossSubtab</Description>
+    <StartTime>2018-10-22 12:21:48</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\ee9a2b05-155c-44dd-a411-c37488198aa6.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_HealthyLivingDropdown [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:47</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_Fitness [(Fitness) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:48</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Fitness subtab.</Name>
+    <Description>Fitness subpage is displayed.
+Current elements are displayed:  
+FitnessHeader, 
+FitnessArticlesSection</Description>
+    <StartTime>2018-10-22 12:21:57</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\f4109c12-7e02-4203-a8d2-432940cd25b2.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_Fitness [(Fitness) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:47</StartTime>
+    <Duration>10</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over Healthy Living dropdown</Name>
+    <Description>Healthy Living dropdown is displayed.
+Current subtabs are displayed:  
+FitnessSubtab, 
+HealthSubtab, 
+HealthyRecipesSubtab, 
+Before&amp;AfterSubtab, 
+WeightLossSubtab</Description>
+    <StartTime>2018-10-22 12:22:12</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\0eca8e59-4775-406f-b26d-22742773788b.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_HealthyLivingDropdown [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:58</StartTime>
+    <Duration>14</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_Health [(Health) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:13</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Health subtab.</Name>
+    <Description>Health subpage is displayed.
+Current elements are displayed:  
+HealthHeader, 
+HealthArticlesSection</Description>
+    <StartTime>2018-10-22 12:22:23</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\48edbfdc-9184-4e28-8e51-bc13a44f7707.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_Health [(Health) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:21:58</StartTime>
+    <Duration>25</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over Healthy Living dropdown</Name>
+    <Description>Healthy Living dropdown is displayed.
+Current subtabs are displayed:  
+FitnessSubtab, 
+HealthSubtab, 
+HealthyRecipesSubtab, 
+Before&amp;AfterSubtab, 
+WeightLossSubtab</Description>
+    <StartTime>2018-10-22 12:22:24</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\1b9bfff7-a7cf-40c4-b287-e8f472ff0b53.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_HealthyLivingDropdown [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:23</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_HealthyRecipes [(Healthy Recipes) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:24</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Healthy Recipes subtab</Name>
+    <Description>Healthy Recipes subpage is displayed.
+Current elements are displayed:  
+HealthyRecipesHeader, 
+HealthyRecipesSection</Description>
+    <StartTime>2018-10-22 12:22:28</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\5bf39417-8dbc-41eb-a40a-1f18d288cbbe.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_HealthyRecipes [(Healthy Recipes) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:23</StartTime>
+    <Duration>5</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over Healthy Living dropdown</Name>
+    <Description>Healthy Living dropdown is displayed.
+Current subtabs are displayed:  
+FitnessSubtab, 
+HealthSubtab, 
+HealthyRecipesSubtab, 
+Before&amp;AfterSubtab, 
+WeightLossSubtab</Description>
+    <StartTime>2018-10-22 12:22:30</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\26ac11bc-5471-4ca8-aa09-bbe0142b71d8.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_HealthyLivingDropdown [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:29</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_BeforeAndAfter [(Before&amp;After) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:30</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Before&amp;After subtab.</Name>
+    <Description>Before&amp;After subpage is displayed.
+Current elements are displayed:  
+Before&amp;AfterHeader, 
+Before&amp;AfterArticlesSection</Description>
+    <StartTime>2018-10-22 12:22:34</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\a3bb538d-6810-4715-a9ee-9f65dcc211ef.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_Before&amp;After [(Before&amp;After) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:29</StartTime>
+    <Duration>5</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over Healthy Living dropdown</Name>
+    <Description>Healthy Living dropdown is displayed.
+Current subtabs are displayed:  
+FitnessSubtab, 
+HealthSubtab, 
+HealthyRecipesSubtab, 
+Before&amp;AfterSubtab, 
+WeightLossSubtab</Description>
+    <StartTime>2018-10-22 12:22:35</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\9f7d4bef-2473-4992-8f2a-65418b294011.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_HealthyLivingDropdown [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:34</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_WeightLoss [(WeightLoss) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:35</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Weight Loss subtab.</Name>
+    <Description>Weight Loss subpage is displayed.
+Current elements are displayed:  
+WeightLossHeader, 
+WeightLossArticlesSection</Description>
+    <StartTime>2018-10-22 12:22:40</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\f956c723-7850-4217-aa08-a92f4a604e2f.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_WeightLoss [(WeightLoss) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:34</StartTime>
+    <Duration>6</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_Community [(Community) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:41</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Community tab.</Name>
+    <Description>Community subpage is displayed.
+Current elements are displayed:  
+CommunityHeader, 
+DiscussionTopicsList</Description>
+    <StartTime>2018-10-22 12:22:45</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\2515c40e-4d7c-4b24-82d3-67feccf41f18.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_Community [(Community) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:41</StartTime>
+    <Duration>4</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_Blog [(Blog) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:45</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Blog tab.</Name>
+    <Description>Blog subpage is displayed.
+Current elements are displayed:  
+BlogHeader, 
+BlogArticlesSection, 
+FeaturedHeader, 
+FeaturedSidebar, 
+FollowUsHeader, 
+SocialMediaContainer, 
+Facebook, 
+Google+, 
+Instagram, 
+Pinterest, 
+Twitter, 
+Youtube</Description>
+    <StartTime>2018-10-22 12:22:49</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\a6cd186b-d09b-47d0-8eea-b5211fbd16d3.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_Blog [(Blog) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:45</StartTime>
+    <Duration>4</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_About [(About) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:49</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on About tab.</Name>
+    <Description>About subpage is displayed.
+Current elements are displayed:  
+AboutImage, 
+AboutText, 
+VideoImage, 
+FeatureText, 
+FeatureImageGrid, 
+InfoText, 
+BioImage, 
+Mentions</Description>
+    <StartTime>2018-10-22 12:22:54</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\9c021ddb-b32f-414a-b3ec-f254828ef358.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_About [(About) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:49</StartTime>
+    <Duration>5</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over My Fitness dropdown</Name>
+    <Description>My Fitness dropdown is displayed.
+Current buttons are displayed:  
+Join, 
+SignIn</Description>
+    <StartTime>2018-10-22 12:22:55</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\892c8d69-50f1-422f-985d-0bd04e87cd82.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_MyFitness [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:55</StartTime>
+    <Duration>0</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over My Fitness dropdown</Name>
+    <Description>My Fitness dropdown is displayed.
+Current buttons are displayed:  
+Join, 
+SignIn</Description>
+    <StartTime>2018-10-22 12:22:56</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\c978880d-3c16-4692-8785-56474d6c8756.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_MyFitness [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:56</StartTime>
+    <Duration>0</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_Join [(Main) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:56</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Join button.</Name>
+    <Description>Join subpage is displayed.
+Current elements are displayed:  
+FacebookButton, 
+Google+Button, 
+RegisterForm, 
+FirstName, 
+LastName, 
+Email, 
+Username, 
+Password, 
+ConfirmPassword, 
+Recaptcha, 
+JoinButton</Description>
+    <StartTime>2018-10-22 12:23:01</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\52602158-da57-4fb6-a3f8-98b0d51a3ddf.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_Join [(Main) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:22:55</StartTime>
+    <Duration>6</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Hover over My Fitness dropdown</Name>
+    <Description>My Fitness dropdown is displayed.
+Current buttons are displayed:  
+Join, 
+SignIn</Description>
+    <StartTime>2018-10-22 12:23:02</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\6948cedf-482a-41a4-93fc-61b1b65e9692.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Hover_MyFitness [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:23:01</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_SignIn [(Main) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:23:02</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Sign In button.</Name>
+    <Description>Sign In subpage is displayed.
+Current elements are displayed:  
+FacebookButton, 
+Google+Button, 
+SignInBox, 
+Username, 
+Password, 
+RememberMe, 
+SignInButton</Description>
+    <StartTime>2018-10-22 12:23:03</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\a4648f9a-5438-4824-98c0-dbbe595179ae.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_SignIn [(Main) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:23:01</StartTime>
+    <Duration>2</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="Action">
+<Data>
+    <Name>Navigate_Cart [(Cart) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:23:04</StartTime>
+    <Result>Done</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Click on Shopping Bag icon</Name>
+    <Description>Cart subpage is displayed.
+Current elements are displayed:  
+ShoppingCartHeader, 
+ShoppingCartSection</Description>
+    <StartTime>2018-10-22 12:23:05</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\096ce7ad-8aa6-4ef3-9f70-98494fdc0ff2.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Verify_Cart [(Cart) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:23:04</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="User">
+<Data>
+    <Name>Check text from the Cart subpage header</Name>
+    <Description>Text from the Cart subpage header is equal to: Shopping Bag is Empty</Description>
+    <StartTime>2018-10-22 12:23:05</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\e2feab43-44c3-4ca7-953e-5a0151c6a0ae.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>Click on Fitness Blender Logo button</Name>
+    <Description>Fitness Blender Logo button is displayed.
+Fitness Blender Home page is redirected</Description>
+    <StartTime>2018-10-22 12:23:07</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <StepCustomImagePath>Resources\User\a77a78ac-aebe-4b1d-8369-4e047b9c447f.png</StepCustomImagePath>
+      <IconKey>1cb0e33b7c4344e78dd88dc1707ac965</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Redirect_Home [(Home) Reusable Actions]</Name>
+    <Description />
+    <StartTime>2018-10-22 12:23:05</StartTime>
+    <Duration>2</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>NavigateToSubpages</Name>
+    <Description />
+    <StartTime>2018-10-22 12:20:44</StartTime>
+    <Duration>143</Duration>
+    <Result>Passed</Result>
+    <InputParameters>
+      <Parameter name="strBrowser" value="chromenormal" type="System.String" />
+      <Parameter name="strURL" value="https://www.fitnessblender.com/" type="System.String" />
+    </InputParameters>
+    <Extension>
+      <IconKey>a6ac2c1f11e04dc3a83467a969c27e46</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>TC_NavigateToSubpages</Name>
+    <ToolName>Micro Focus Unified Functional Testing</ToolName>
+    <ToolVersion>14.50</ToolVersion>
+    <ToolVersionStringLiteral>14.50</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2018-10-22 12:20:42</StartTime>
+    <Duration>145</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>81d1fa0413144ebfa401451af5a30582</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>+02:00:00</Timezone>
+      <Locale>English (United States)</Locale>
+      <User>BILLENNIUM\nwelter</User>
+      <CpuInfo>Intel(R) Core(TM) i5-7440HQ CPU @ 2.80GHz</CpuInfo>
+      <NumberOfCores>4</NumberOfCores>
+      <TotalMemory>16266</TotalMemory>
+      <HostName>billennium.local\BILL-0019</HostName>
+      <OSInfo>Windows 10</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xls" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>TempResults</ResultName>
+    <RunStartTime>2018-10-22 12:20:42</RunStartTime>
+    <Timezone>+02:00:00</Timezone>
+    <OrchestrationToolName>Micro Focus Unified Functional Testing</OrchestrationToolName>
+    <OrchestrationToolVersion>14.50</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>14.50</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>
