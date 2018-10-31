@@ -14,7 +14,9 @@ Dim arrPageElements, arrPageElementsRightDown, arrCheckResults
 
 ' Verify Meal Plans subpage main section content
 arrPageElements = Array(Browser("WebBrowser").Page("MealPlans").WebElement("MealPlansHeader"),_ 
-						Browser("WebBrowser").Page("MealPlans").WebElement("MainSection"),_ 
+						Browser("WebBrowser").Page("MealPlans").WebElement("MainSection"),_
+						Browser("WebBrowser").Page("MealPlans").WebElement("CalendarPlansHeader"),_ 
+						Browser("WebBrowser").Page("MealPlans").WebElement("EbookPlansHeader"),_ 	
 						Browser("WebBrowser").Page("MealPlans").WebElement("FeaturedHeader"),_ 
 						Browser("WebBrowser").Page("MealPlans").WebElement("FeaturedSidebar"))
 
