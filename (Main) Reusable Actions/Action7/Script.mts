@@ -23,7 +23,8 @@ End If
 If Browser("WebBrowser").Page("AllPages").WebElement("FitnessBlenderHeader").WebElement("MyFitnessMenu").Link("Join").Exist(5) Then
 	Browser("WebBrowser").Page("AllPages").WebElement("FitnessBlenderHeader").WebElement("MyFitnessMenu").Link("Join").Click
 Else
-	fnReportStepEx "Fail", "Click on Join button", "Join button is NOT displayed", Browser("WebBrowser"), "true"
+	fnReportStepEx "Fail", "Click on Join button", "Join button is NOT displayed",_ 
+	Browser("WebBrowser"), "true"
 	ExitActionIteration "Navigate_Join.2"	
 End If
 

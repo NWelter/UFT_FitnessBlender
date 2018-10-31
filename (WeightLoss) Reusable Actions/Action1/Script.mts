@@ -18,9 +18,11 @@ arrPageElements = Array(Browser("WebBrowser").Page("WeightLoss").WebElement("Wei
 arrCheckResults = fnCheckPageElements(arrPageElements)
 
 If arrCheckResults(0) Then
-	fnReportStepEx "Pass", "Click on Weight Loss subtab. Verify Weight Loss subpage content.", "Weight Loss subpage is displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
+	fnReportStepEx "Pass", "Click on Weight Loss subtab. Verify Weight Loss subpage content.",_ 
+	"Weight Loss subpage is displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
-	fnReportStepEx "Fail", "Click on Weight Loss subtab. Verify Weight Loss subpage content.", "Weight Loss subpage is NOT displayed." & VbCrLf & " Current elements are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
+	fnReportStepEx "Fail", "Click on Weight Loss subtab. Verify Weight Loss subpage content.",_ 
+	"Weight Loss subpage is NOT displayed." & VbCrLf & " Current elements are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
 	ExitActionIteration "Verify_WeightLoss.1"
 End If
 

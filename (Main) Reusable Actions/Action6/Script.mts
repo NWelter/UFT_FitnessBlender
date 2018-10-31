@@ -23,9 +23,11 @@ arrPageElements = Array (Browser("WebBrowser").Page("SignIn").Link("FacebookButt
 arrCheckResults = fnCheckPageElements(arrPageElements)
 
 If 	arrCheckResults(0) Then
-	fnReportStepEx "Pass", "Verify Sign In subpage content", "Sign In subpage is displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
+	fnReportStepEx "Pass", "Verify Sign In subpage content",_ 
+	"Sign In subpage is displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
-	fnReportStepEx "Fail", "Verify Sign In subpage content.", "Sign In subpage is NOT displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"	
+	fnReportStepEx "Fail", "Verify Sign In subpage content.",_ 
+	"Sign In subpage is NOT displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"	
 	ExitActionIteration "Verify_SignIn.1"
 End If
 

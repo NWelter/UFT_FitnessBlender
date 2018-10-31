@@ -106,7 +106,7 @@ If Browser("WebBrowser").Page("Join").WebElement("Recaptcha").Exist(5) Then
 	fnReportStepEx "Pass", "Select reCAPTCHA", "reCAPTCHA is selected", Browser("WebBrowser"), "true"
 Else
 	fnReportStepEx "Fail", "Select reCAPTCHA", "reCAPTCHA is NOT displayed", Browser("WebBrowser"), "true"
-		ExitActionIteration "FillRegisterForm_Join.7.2"
+	ExitActionIteration "FillRegisterForm_Join.7"
 End If
 
 ' Click on Join button

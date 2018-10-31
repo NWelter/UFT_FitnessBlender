@@ -1,1 +1,3 @@
-﻿<Properties />
+﻿<Properties>
+  <WatchEntry0 value="fnSet(Browser(&quot;WebBrowser&quot;).Page(&quot;SignIn&quot;).WebElement(&quot;SignInBox&quot;).WebEdit(&quot;Username&quot;), Parameter (&quot;strUsername&quot;))" />
+</Properties>

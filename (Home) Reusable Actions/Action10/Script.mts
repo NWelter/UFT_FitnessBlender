@@ -26,6 +26,7 @@ If Parameter("strKeyword") <> "" Then
 			"Searching keyword " & "'" & Parameter("strKeyword") & "'" & " is NOT contained in text results."  , Browser("WebBrowser"), "true"
 			ExitActionIteration "Check_SearchingResults.1"
 		End If
+
 'Negative case
 	ElseIf Browser("WebBrowser").Page("SearchResults").WebElement("NoResultsHeader").Exist(5) Then
 		If Browser("WebBrowser").Page("SearchResults").WebElement("NoResultsHeader").fnContains("outertext", strNoResult) Then

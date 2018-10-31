@@ -21,15 +21,16 @@ arrPageElements = Array (Browser("WebBrowser").Page("Join").Link("FacebookButton
 						Browser("WebBrowser").Page("Join").WebEdit("Username"),_ 
 						Browser("WebBrowser").Page("Join").WebEdit("Password"),_ 
 						Browser("WebBrowser").Page("Join").WebEdit("ConfirmPassword"),_ 
-						Browser("WebBrowser").Page("Join").WebElement("Recaptcha"),_ 
 						Browser("WebBrowser").Page("Join").WebButton("JoinButton"))
 						
 arrCheckResults = fnCheckPageElements(arrPageElements)
 
 If arrCheckResults(0) Then
-	fnReportStepEx "Pass", "Verify Join subpage content.", "Join subpage is displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
+	fnReportStepEx "Pass", "Verify Join subpage content.",_ 
+	"Join subpage is displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
-	fnReportStepEx "Fail", "Verify Join subpage content.", "Join subpage is NOT displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"	
+	fnReportStepEx "Fail", "Verify Join subpage content.",_ 
+	"Join subpage is NOT displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"	
 	ExitActionIteration "Verify_Join.1"
 End If
 

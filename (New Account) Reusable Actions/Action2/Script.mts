@@ -12,10 +12,16 @@ Reporter.Filter = rfDisableAll
 ' Click on Create Account button
 If Browser("WebBrowser").Page("NewAccount").WebButton("CreateAccount").Exist(5) Then
 	Browser("WebBrowser").Page("NewAccount").WebButton("CreateAccount").Click
-	fnReportStepEx "Pass", "Click on Create Account Button", "Create Account button is displayed", Browser("WebBrowser"), "true"
 Else
 	fnReportStepEx "Fail", "Click on Create Account Button", "Create Account button is NOT displayed", Browser("WebBrowser"), "true"
 	ExitActionIteration "Confirm_NewAccount.1"	
+End If
+
+If Browser("WebBrowser").Page("Dashboard").Exist(20) Then
+	fnReportStepEx "Pass", "Click on Create Account Button", "Account is confirmed", Browser("WebBrowser"), "true"
+Else
+	fnReportStepEx "Fail", "Click on Create Account Button", "Account is NOT confirmed", Browser("WebBrowser"), "true"
+	ExitActionIteration "Confirm_NewAccount.2"
 End If
 
 'Verify User Dashboard subpage

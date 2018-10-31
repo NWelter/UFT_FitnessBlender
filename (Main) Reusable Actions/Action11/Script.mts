@@ -1,6 +1,6 @@
 ﻿'------------------------------------------------------------------------------------------------------------
 'Action Name: SignOut
-'Description: This action is to verify that login user is able to log out from application and redirected to Home Page
+'Description: This action is to verify that login user is able to log out from application and redirected to Home page
 'Creation Date: 29-10-2018
 'Last modification date: <None>
 'Assumptions / Effects: User is log out succesfully
@@ -23,10 +23,17 @@ End If
 ' Click on Sign Out button
 If Browser("WebBrowser").Page("AllPages").WebElement("FitnessBlenderHeader").WebElement("MyFitnessMenuUser").Link("SignOut").Exist(5) Then
 	Browser("WebBrowser").Page("AllPages").WebElement("FitnessBlenderHeader").WebElement("MyFitnessMenuUser").Link("SignOut").Click
-	fnReportStepEx "Pass", "Click on Sign Out button", "Sign Out button is displayed", Browser("WebBrowser"), "true"
+	'fnReportStepEx "Pass", "Click on Sign Out button", "Sign Out button is displayed", Browser("WebBrowser"), "true"
 Else
 	fnReportStepEx "Fail", "Click on Sign Out button", "Sign Out button is NOT displayed", Browser("WebBrowser"), "true"
 	ExitActionIteration "SignOut.2"
+End If
+
+' Verify redirection to Home page
+If Browser("WebBrowser").Page("Home").Exist(20) Then
+	fnReportStepEx "Pass", "Click on Sign Out button", "Home page is displayed.", Browser("WebBrowser"), "true"
+Else
+	fnReportStepEx "Fail", "Click on Sign Out button", "Home page is NOT displayed.", Browser("WebBrowser"), "true"
 End If
 
 ExitActionIteration "0"

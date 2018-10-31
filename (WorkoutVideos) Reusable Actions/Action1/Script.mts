@@ -1,4 +1,5 @@
-﻿'Action Name : Verify_WorkoutVideos
+﻿'-----------------------------------------------------------------------------------------------------------------------------------------------
+'Action Name : Verify_WorkoutVideos
 'Description : This action is to verify that Workout Videos subpage is displayed and verify content
 'Creation Date : 10.10.2018
 'Last modification date : None

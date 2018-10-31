@@ -17,9 +17,11 @@ arrPageElements = Array(Browser("WebBrowser").Page("Dashboard").WebElement("Dash
 arrCheckResults = fnCheckPageElements(arrPageElements)
 
 If arrCheckResults(0) Then
-	fnReportStepEx "Pass", "Verify User Dashboard subpage content.", "User Dashboard subpage is displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
+	fnReportStepEx "Pass", "Verify User Dashboard subpage content.",_ 
+	"User Dashboard subpage is displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
-	fnReportStepEx "Fail", "Verify User Dashboard subpage content.", "User Dashboard subpage is NOT displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"	
+	fnReportStepEx "Fail", "Verify User Dashboard subpage content.",_ 
+	"User Dashboard subpage is NOT displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"	
 	ExitActionIteration "Verify_UserDashboard.1"
 End If
 

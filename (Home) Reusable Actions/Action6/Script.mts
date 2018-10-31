@@ -30,11 +30,11 @@ If Browser("WebBrowser").Page("AllPages").WebElement("FitnessBlenderHeader").Web
 	Else
 		fnReportStepEx "Fail", "Hover over My Fitness dropdown. Verify current buttons.","My Fitness dropdown is displayed." & VbCrLf &_
 		"Current buttons are NOT displayed." & arrCheckResults(2), Browser("WebBrowser"), "true"
-		ExitActionIteration "Hover_MyFitness.1.1"
+		ExitActionIteration "Hover_MyFitness.2"
 	End If		
 Else
 	fnReportStepEx "Fail", "Hover over My Fitness dropdown. Verify current buttons.", "My Fitness dropdown is NOT displayed", Browser("WebBrowser"), "true"
-	ExitActionIteration "Hover_MyFitness.1.2"
+	ExitActionIteration "Hover_MyFitness.1"
 End If 
 
 ExitActionIteration "0"

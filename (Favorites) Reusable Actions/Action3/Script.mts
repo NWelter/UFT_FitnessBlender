@@ -31,11 +31,11 @@ If Browser("WebBrowser").Page("Favorites").WebElement("FavoriteVideosSection").L
 				Browser("WebBrowser").Page("Favorites").WebElement("FavoriteVideosSection").Object.scrollIntoView
 				fnReportStepEx "Fail", "Check if proper Video ID is added to favorites.",_ 
 				"Specified Video is NOT added to favorites.", Browser("WebBrowser"), "true"
-				ExitActionIteration "Check_VideoID.1.1"		
+				ExitActionIteration "Check_VideoID.2"		
 		End If
 Else
 	fnReportStepEx "Fail", "Check if proper Video ID is added to favorites.", "Video link is NOT display", Browser("WebBrowser"), "true"
-	 ExitActionIteration "Check_VideoID.1.2"	
+	 ExitActionIteration "Check_VideoID.1"	
 End If
 
 ExitActionIteration "0"

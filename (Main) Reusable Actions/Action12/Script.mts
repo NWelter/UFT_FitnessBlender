@@ -20,11 +20,11 @@ If Browser("WebBrowser").Page("Dashboard").WebElement("ConfirmHeader").Exist(5) 
 		strInvalidHeader = Browser("WebBrowser").Page("Dashboard").WebElement("ConfirmHeader").GetROProperty("outertext")
 		fnReportStepEx "Fail", "Verify text from information header.", "Information header DOESN'T contain specified value: " &  Parameter("strDashboardHeader") & VbCrLf &_ 
 		"Current text from information header is: " & strInvalidHeader, Browser("WebBrowser"), "true"
-		ExitActionIteration "Check_UserDashboardHeader.1.1"
+		ExitActionIteration "Check_UserDashboardHeader.2"
 	End If
 Else 
 	fnReportStepEx "Fail", "Verify text from information header.", "Information header is NOT display", Browser("WebBrowser"), "true"
-	ExitActionIteration "Check_UserDashboardHeader.1.2"
+	ExitActionIteration "Check_UserDashboardHeader.1"
 End If
 
 ExitActionIteration "0"

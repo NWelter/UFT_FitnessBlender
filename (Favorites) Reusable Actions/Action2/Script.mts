@@ -19,7 +19,7 @@ arrPageElements = Array(Browser("WebBrowser").Page("Favorites").WebElement("Filt
 arrCheckResults = fnCheckPageElements(arrPageElements)
 
 If arrCheckResults(0) Then
-Browser("WebBrowser").Page("Favorites").WebElement("FavoriteVideosSection").Object.scrollIntoView
+	Browser("WebBrowser").Page("Favorites").WebElement("FavoriteVideosSection").Object.scrollIntoView
 	fnReportStepEx "Pass", "Verify Favorites subpage content.", "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else
 	fnReportStepEx "Fail", "Verify Favorites subpage content.","Current elements are NOT displayed." & arrCheckResults(2), Browser("WebBrowser"), "true"

@@ -18,22 +18,24 @@ strRunActionStatus = "9999"
 strRunActionStatus = RunAction ("Verify_WorkoutVideosDetails", oneIteration)
 If (StrComp(strRunActionStatus, "0", 1) <> 0) Then
     fnReportStep "Fail", "Verify_WorkoutVideosDetails action failed" , "Returned value: " & strRunActionStatus , ""
-    ExitActionIteration "Add_To_Favorites.1"
 End If
 
 'Click on Add To Favorites button
 If Browser("WebBrowser").Page("WorkoutVideosDetails").WebButton("AddToFavorites").Exist(5) Then
 	Browser("WebBrowser").Page("WorkoutVideosDetails").WebButton("AddToFavorites").Click
 	strAdded = Trim(Browser("WebBrowser").Page("WorkoutVideosDetails").WebButton("AddToFavorites").GetROProperty("outertext"))
-	If strAdded = "ADDED TO FAVORITES" Then
-		fnReportStepEx "Pass", "Click on Add To Favorites button", "Button is changed correctly." & VbCrLf & "Current button title is: " & strAdded , Browser("WebBrowser"), "true"
-	Else 
-		fnReportStepEx "Fail", "Click on Add To Favorites button", "Button is NOT changed correctly." & VbCrLf & "Current button title is: " & strAdded, Browser("WebBrowser"), "true"
-		ExitActionIteration "Add_To_Favorites.2.1"
-	End If
 Else
 	fnReportStepEx "Fail", "Click on Add To Favorites button", "Button is NOT displayed", Browser("WebBrowser"), "true"
-	ExitActionIteration "Add_To_Favorites.2.2"
+	ExitActionIteration "Add_To_Favorites.1"
+End If
+
+If strAdded = "ADDED TO FAVORITES" Then
+	fnReportStepEx "Pass", "Click on Add To Favorites button", "Button is changed correctly."_ 
+	& VbCrLf & "Current button title is: " & strAdded , Browser("WebBrowser"), "true"
+Else 
+	fnReportStepEx "Fail", "Click on Add To Favorites button", "Button is NOT changed correctly."_ 
+	& VbCrLf & "Current button title is: " & strAdded, Browser("WebBrowser"), "true"
+	ExitActionIteration "Add_To_Favorites.2"
 End If
 
 'Get text from video header to <<strVideoDetailsHeader>>

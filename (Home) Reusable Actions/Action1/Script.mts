@@ -36,7 +36,7 @@ Else
 	ExitActionIteration "Search.3"
 End If
 
-
+'Verify Searching Results subpage content
 RunAction "Check_SearchingResults", oneIteration, ""
 
 ExitActionIteration "0"

@@ -13,16 +13,20 @@ Reporter.Filter = rfDisableAll
 ' Click on Fitness Blender Logo button
 If Browser("WebBrowser").Page("AllPages").WebElement("FitnessBlenderHeader").Link("LogoButton").Exist(30) Then
 	Browser("WebBrowser").Page("AllPages").WebElement("FitnessBlenderHeader").Link("LogoButton").Click
-	If fnIsVisible(Browser("WebBrowser").Page("Home").WebElement("MainContentSection")) Then
-		fnReportStepEx "Pass", "Click on Fitness Blender Logo button", "Fitness Blender Logo button is displayed." & VbCrLf & "Fitness Blender Home page is redirected", Browser("WebBrowser"), "true"
-	Else 
-		fnReportStepEx "Fail", "Click on Fitness Blender Logo button", "Fitness Blender Logo button is displayed." & VbCrLf & "Fitness Blender Home page is NOT redirected", Browser("WebBrowser"), "true"
-		ExitActionIteration "Redirect_Home.1.1"
-	End  If
 Else 
-	fnReportStepEx "Fail", "Click on Fitness Blender Logo button", "Fitness Blender Logo button is NOT displayed." & VbCrLf & "Fitness Blender Home page is NOT redirected", Browser("WebBrowser"), "true"
-	ExitActionIteration "Redirect_Home.1.2"
+	fnReportStepEx "Fail", "Click on Fitness Blender Logo button",_ 
+	"Fitness Blender Logo button is NOT displayed." & VbCrLf & "Fitness Blender Home page is NOT redirected", Browser("WebBrowser"), "true"
+	ExitActionIteration "Redirect_Home.1"
 End If
+
+If fnIsVisible(Browser("WebBrowser").Page("Home").WebElement("MainContentSection")) Then
+	fnReportStepEx "Pass", "Click on Fitness Blender Logo button",_ 
+	"Fitness Blender Logo button is displayed." & VbCrLf & "Fitness Blender Home page is redirected", Browser("WebBrowser"), "true"
+Else 
+	fnReportStepEx "Fail", "Click on Fitness Blender Logo button",_ 
+	"Fitness Blender Logo button is displayed." & VbCrLf & "Fitness Blender Home page is NOT redirected", Browser("WebBrowser"), "true"
+	ExitActionIteration "Redirect_Home.2"
+End  If
 
 ExitActionIteration "0"
 

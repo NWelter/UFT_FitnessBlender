@@ -18,22 +18,22 @@ If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection"
 	
 	'Get ID from video link to <<strVideoLinkID>>
 	Parameter ("strVideoLinkID") = Trim(Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").GetROProperty("html id"))
-	
-	'Click on Heart icon
-	If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").WebButton("HeartIcon").Exist(5) Then
-		Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").WebButton("HeartIcon").Click
-		Setting.WebPackage("ReplayType") = 1
-		Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Object.scrollIntoView
-		fnReportStepEx "Pass", "Hover over Workout Video from the list and click on Heart icon.", "Workout Video is selected. Heart icon is selected.", Browser("WebBrowser"), "true"	
-	Else
-		Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Object.scrollIntoView
-		fnReportStepEx "Fail", "Hover over Workout Video from the list and click on Heart icon.", "Workout Video is selected. Heart icon is NOT selected.", Browser("WebBrowser"), "true"
-		ExitActionIteration "Add_To_Favorites_By_Icon.1.1"		
-	End If
 Else
 	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Object.scrollIntoView
 	fnReportStepEx "Fail", "Hover over Workout Video from the list and click on Heart icon.", "Workout Video is NOT displayed", Browser("WebBrowser"), "true"
-	ExitActionIteration "Add_T0_Favorites_By_Icon.1.2"	
+	ExitActionIteration "Add_T0_Favorites_By_Icon.1"	
+End If
+
+' Click on Heart icon
+If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").WebButton("HeartIcon").Exist(5) Then
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").WebButton("HeartIcon").Click
+	Setting.WebPackage("ReplayType") = 1
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Object.scrollIntoView
+	fnReportStepEx "Pass", "Hover over Workout Video from the list and click on Heart icon.", "Workout Video is selected. Heart icon is selected.", Browser("WebBrowser"), "true"	
+Else
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Object.scrollIntoView
+	fnReportStepEx "Fail", "Hover over Workout Video from the list and click on Heart icon.", "Workout Video is selected. Heart icon is NOT selected.", Browser("WebBrowser"), "true"
+	ExitActionIteration "Add_To_Favorites_By_Icon.2"		
 End If
 
 ExitActionIteration "0"

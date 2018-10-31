@@ -12,16 +12,23 @@ Reporter.Filter = rfDisableAll
 
 Dim strTitle : strTitle = ".*" & Parameter("strVideoTitle") & ".*"
 
-'Select first workout video link with title that contains current text <<strVideoTitle>>
+'Select workout video link with title text <<strVideoTitle>>
 Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").SetTOProperty "outertext", strTitle
 If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").Exist(5) Then
 	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").Click
-	fnReportStepEx "Pass", "Select first video link with title that contains current text: " & "'" & Parameter("strVideoTitle") & "'",_ 
-	"Workout video link with title contains: " & "'" & Parameter("strVideoTitle") & "'" & " is selected", Browser("WebBrowser"), "true"
 Else
-	fnReportStepEx "Fail", "Select first video link with title that contains current text: " & "'" & Parameter("strVideoTitle") & "'",_ 
-	"Workout video link with title contains: " & "'" & Parameter("strVideoTitle") & "'" & " is NOT selected", Browser("WebBrowser"), "true"
+	fnReportStepEx "Fail", "Select video link with title text: " & "'" & Parameter("strVideoTitle") & "'",_ 
+	"Workout video link with title text: " & "'" & Parameter("strVideoTitle") & "'" & " NOT exist", Browser("WebBrowser"), "true"
 	ExitActionIteration "Select_VideoWithTitle.1"
+End If
+
+If Browser("WebBrowser").Page("WorkoutVideosDetails").WebElement("WorkoutDetailsPanel").Exist(10) Then
+	fnReportStepEx "Pass", "Select video link with title text: " & "'" & Parameter("strVideoTitle") & "'",_ 
+	"Workout video link with title text: " & "'" & Parameter("strVideoTitle") & "'" & " is selected", Browser("WebBrowser"), "true"	
+Else
+	fnReportStepEx "Fail", "Select video link with title text: " & "'" & Parameter("strVideoTitle") & "'",_ 
+	"Workout video link with title text: " & "'" & Parameter("strVideoTitle") & "'" & " is NOT selected", Browser("WebBrowser"), "true"
+	ExitActionIteration "Select_VideoWithTitle.2"	
 End If
 
 ExitActionIteration "0"

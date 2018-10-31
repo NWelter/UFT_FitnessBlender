@@ -33,11 +33,11 @@ If Browser("WebBrowser").Page("AllPages").WebElement("FitnessBlenderHeader").Web
 	Else
 		fnReportStepEx "Fail", "Hover over Healthy Living dropdown. Verify current subtabs.", "Healthy Living dropdown is displayed." & VbCrLf &_ 
 		"Current subtabs are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-		ExitActionIteration "Hover_HealthyLivingDropdown.1.1"
+		ExitActionIteration "Hover_HealthyLivingDropdown.2"
 	End If	
 Else 
 	fnReportStepEx "Fail", "Hover over Healthy Living dropdown. Verify current subtabs.", "Healthy Living dropdown is NOT displayed", Browser("WebBrowser"), "true"
-	ExitActionIteration "Hover_HealthyLivingDropdown.1.2"
+	ExitActionIteration "Hover_HealthyLivingDropdown.1"
 End If
 
 ExitActionIteration "0"

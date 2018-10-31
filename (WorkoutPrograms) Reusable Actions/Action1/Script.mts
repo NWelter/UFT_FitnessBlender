@@ -20,9 +20,11 @@ arrPageElements = Array(Browser("WebBrowser").Page("WorkoutPrograms").WebElement
 arrCheckResults = fnCheckPageElements(arrPageElements)
 
 If arrCheckResults(0) Then
-	fnReportStepEx "Pass", "Click on Workout Programs subtab. Verify Workout Programs subpage content.", "Workout Programs subpage is displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
+	fnReportStepEx "Pass", "Click on Workout Programs subtab. Verify Workout Programs subpage content.",_ 
+	"Workout Programs subpage is displayed." & VbCrLf & "Current elements are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
-	fnReportStepEx "Fail", "Click on Workout Programs subtab. Verify Workout Programs subpage content.", "Workout Videos subpage is NOT displayed." & VbCrLf & " Current elements are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
+	fnReportStepEx "Fail", "Click on Workout Programs subtab. Verify Workout Programs subpage content.",_ 
+	"Workout Videos subpage is NOT displayed." & VbCrLf & " Current elements are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
 	ExitActionIteration "Verify_WorkoutPrograms.1"
 End If
 

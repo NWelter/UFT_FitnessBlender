@@ -21,9 +21,11 @@ arrPageElements = Array(Browser("WebBrowser").Page("MealPlans").WebElement("Meal
 arrCheckResults = fnCheckPageElements(arrPageElements)
 
 If arrCheckResults(0) Then
-	fnReportStepEx "Pass", "Click on Meal Plans subtab. Verify main section content.", "Meal Plans subpage is displayed." & VbCrLf & "Current elements of main section are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
+	fnReportStepEx "Pass", "Click on Meal Plans subtab. Verify main section content.",_ 
+	"Meal Plans subpage is displayed." & VbCrLf & "Current elements of main section are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
-	fnReportStepEx "Fail", "Click on Meal Plans subtab. Verify main section content.", "Meal Plans subpage is NOT displayed." & VbCrLf & " Current elements of main section are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
+	fnReportStepEx "Fail", "Click on Meal Plans subtab. Verify main section content.",_ 
+	"Meal Plans subpage is NOT displayed." & VbCrLf & " Current elements of main section are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
 	ExitActionIteration "Verify_MealPlans.1"
 End If
 
@@ -40,9 +42,13 @@ arrPageElementsRightDown = Array (Browser("WebBrowser").Page("MealPlans").WebEle
 arrCheckResults = fnCheckPageElements(arrPageElementsRightDown)
 
 If arrCheckResults(0) Then
-	fnReportStepEx "Pass", "Click on Meal Plans subtab. Verify right sidebar content.", "Meal Plans subpage is displayed." & VbCrLf & "Current elements of right sidebar are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
+	Browser("WebBrowser").Page("MealPlans").WebElement("SocialMediaContainer").Object.scrollIntoView
+	fnReportStepEx "Pass", "Click on Meal Plans subtab. Verify right sidebar content.",_ 
+	"Meal Plans subpage is displayed." & VbCrLf & "Current elements of right sidebar are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
-	fnReportStepEx "Fail", "Click on Meal Plans subtab. Verify rigth sidebar content.", "Meal Plans subpage is NOT displayed." & VbCrLf & " Current elements of right sidebar are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
+	Browser("WebBrowser").Page("MealPlans").WebElement("SocialMediaContainer").Object.scrollIntoView
+	fnReportStepEx "Fail", "Click on Meal Plans subtab. Verify rigth sidebar content.",_ 
+	"Meal Plans subpage is NOT displayed." & VbCrLf & " Current elements of right sidebar are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
 	ExitActionIteration "Verify_MealPlans.2"
 End If
 
