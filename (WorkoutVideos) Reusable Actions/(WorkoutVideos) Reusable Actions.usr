@@ -12,12 +12,12 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-Hover_WorkoutsAndProgramsDropdown [(Home) Reusable Actions]=Action4\Script.mts
 Verify_WorkoutVideos=Action1\Script.mts
-Select_VideoWithTitle=Action3\Script.mts
-Verify_WorkoutVideosDetails [(WorkoutVideosDetails)Reusable Actions]=Action1\Script.mts
 Navigate_WorkoutVideos=Action2\Script.mts
+Hover_WorkoutsAndProgramsDropdown [(Home) Reusable Actions]=Action4\Script.mts
+Select_VideoWithTitle=Action3\Script.mts
 Select_Video=Action4\Script.mts
+Verify_WorkoutVideosDetails [(WorkoutVideosDetails)Reusable Actions]=Action1\Script.mts
 Add_To_Favorites_By_Icon=Action5\Script.mts
 
 [VuserProfiles]
@@ -56,18 +56,18 @@ Parameters.mtr=
 Action0\Script.mts=
 Action0\Resource.mtr=
 Action0\ObjectRepository.bdb=
-Action4\Script.mts=
-Action4\Resource.mtr=
-Action4\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
-Action3\Script.mts=
-Action3\Resource.mtr=
-Action3\ObjectRepository.bdb=
 Action2\Script.mts=
 Action2\Resource.mtr=
 Action2\ObjectRepository.bdb=
+Action4\Script.mts=
+Action4\Resource.mtr=
+Action4\ObjectRepository.bdb=
+Action3\Script.mts=
+Action3\Resource.mtr=
+Action3\ObjectRepository.bdb=
 Action5\Script.mts=
 Action5\Resource.mtr=
 Action5\ObjectRepository.bdb=

@@ -1,3 +1,5 @@
 ﻿<Properties>
-  <WatchEntry0 value="Parameter (&quot;strVideoLinkID&quot;)" />
+  <WatchEntry0 value="Browser(&quot;WebBrowser&quot;).Page(&quot;WorkoutVideos&quot;).WebElement(&quot;WorkoutVideosSection&quot;).Link(&quot;VideoFirst&quot;).GetROProperty( &quot;outertext&quot;)" />
+  <WatchEntry1 value="Parameter(&quot;strVideoTitle&quot;)" />
+  <WatchEntry2 value="strTitle" />
 </Properties>
