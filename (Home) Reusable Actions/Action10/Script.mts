@@ -16,27 +16,15 @@ strNoResult = "Sorry, there are no results for "
 
 'Check the search results for <<strKeyword>>
 If Parameter("strKeyword") <> "" Then
-'Positve case
 	If Browser("WebBrowser").Page("SearchResults").WebElement("Article").Exist(5) Then
 		If Browser("WebBrowser").Page("SearchResults").WebElement("Article").fnContains("outertext", Parameter("strKeyword")) Then
-			fnReportStepEx "Pass", "Check the search results for keyword " & "'" & Parameter("strKeyword") & "'" & ". Positive case.",_
+			fnReportStepEx "Pass", "Check the search results for keyword " & "'" & Parameter("strKeyword") & "'",_
 			"Searching keyword " & "'" & Parameter("strKeyword") & "'" & " is contained in text results."  , Browser("WebBrowser"), "true"
 		Else 
-			fnReportStepEx "Fail", "Check the search results for keyword " & "'" & Parameter("strKeyword") & "'" & ". Positive case.",_ 
+			fnReportStepEx "Fail", "Check the search results for keyword " & "'" & Parameter("strKeyword") & "'" ,_ 
 			"Searching keyword " & "'" & Parameter("strKeyword") & "'" & " is NOT contained in text results."  , Browser("WebBrowser"), "true"
 			ExitActionIteration "Check_SearchingResults.1"
 		End If
-
-'Negative case
-	ElseIf Browser("WebBrowser").Page("SearchResults").WebElement("NoResultsHeader").Exist(5) Then
-		If Browser("WebBrowser").Page("SearchResults").WebElement("NoResultsHeader").fnContains("outertext", strNoResult) Then
-				fnReportStepEx "Pass", "Check the search results for keyword " & "'" & Parameter("strKeyword") & "'" & " Negative case.",_
-				"'No results' text is displayed: " & "'" & strNoResult & Parameter("strKeyword") & "'", Browser("WebBrowser"), "true"
-		Else 
-				fnReportStepEx "Fail", "Check the search results for keyword " & "'" & Parameter("strKeyword") & "'" & ". Negative case.",_ 
-				"'No results' text is NOT displayed: " & "'" & strNoResult & Parameter("strKeyword") & "'", Browser("WebBrowser"), "true"
-				ExitActionIteration "Check_SearchingResults.2"
-		End If  
 	Else 
 		fnReportStepEx "Fail", "Check the search results for keyword "  & "'" & Parameter("strKeyword") & "'",_ 
 		"Search results are NOT displayed", Browser("WebBrowser"), "true"	
@@ -53,7 +41,7 @@ If Parameter("strKeyword") = "" Then
 	Else
 		fnReportStepEx "Fail", "Check the search results for empty keyword",_ 
 		"Search results are NOT displayed", Browser("WebBrowser"), "true"
-		ExitActionIteration "Check_SearchingResults.3"		
+		ExitActionIteration "Check_SearchingResults.2"		
 	End If
 End If
 
