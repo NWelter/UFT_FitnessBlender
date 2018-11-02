@@ -95,7 +95,7 @@ End If
 
 ' Step 10. Hover over second workout video from list. Click on Heart icon.
 strRunActionStatus = "9999"
-strRunActionStatus = RunAction ("Add_To_Favorites_By_Icon [(WorkoutVideos) Reusable Actions]", oneIteration)
+strRunActionStatus = RunAction ("Add_To_Favorites_By_Icon [(WorkoutVideos) Reusable Actions]", oneIteration, Parameter("strIconColor"), Parameter("strBorderColor"))
 If (StrComp(strRunActionStatus, "0", 1) <> 0) Then
     fnReportStep "Fail", "Add_To_Favorites_By_Icon action failed" , "Returned value: " & strRunActionStatus , ""
     ExitActionIteration "AddingWorkoutVideoToFavorites.6"

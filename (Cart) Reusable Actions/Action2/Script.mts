@@ -17,7 +17,14 @@ Else
 	ExitActionIteration "Navigate_Cart.1"
 End If
 
+If Browser("WebBrowser").Page("Cart").Exist(10) Then
+	fnReportStepEx "Pass", "Click on Shopping Bag icon on navbar header", "Cart subpage is displayed", Browser("WebBrowser"), "true"
+Else
+	fnReportStepEx "Fail", "Click on Shopping Bag icon on navbar header", "Cart subpage is NOT displayed", Browser("WebBrowser"), "true"
+	ExitActionIteration "Navigate_Cart.2"
+End If
+
 ' Verify Cart subpage content
-RunAction "Verify_Cart", oneIteration
+RunAction "Verify_EmptyCart", oneIteration
 
 ExitActionIteration "0"

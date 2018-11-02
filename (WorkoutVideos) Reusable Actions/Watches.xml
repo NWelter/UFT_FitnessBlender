@@ -1,5 +1,7 @@
 ﻿<Properties>
   <WatchEntry0 value="strVideoLinkTitle" />
   <WatchEntry1 value="Parameter (&quot;strVideoLinkID&quot;)" />
-  <WatchEntry2 value="strVideoHeader" />
+  <WatchEntry2 value="strCurrentIconColor" />
+  <WatchEntry3 value="strCurrentBorderColor" />
+  <WatchEntry4 value="Browser(&quot;WebBrowser&quot;).Page(&quot;WorkoutVideos&quot;).WebElement(&quot;WorkoutVideosSection&quot;).Link(&quot;VideoSecond&quot;).GetROProperty(&quot;style/border-color&quot;)" />
 </Properties>

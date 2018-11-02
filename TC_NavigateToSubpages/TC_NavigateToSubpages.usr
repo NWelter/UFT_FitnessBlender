@@ -18,7 +18,6 @@ Verify_WorkoutsAndPrograms [(Workouts&Programs) Reusable Actions]=Action1\Script
 Navigate_WorkoutsAndPrograms [(Workouts&Programs) Reusable Actions]=Action2\Script.mts
 Hover_WorkoutsAndProgramsDropdown [(Home) Reusable Actions]=Action4\Script.mts
 Verify_WorkoutVideos [(WorkoutVideos) Reusable Actions]=Action1\Script.mts
-Navigate_WorkoutVideos [(WorkoutVideos) Reusable Actions]=Action2\Script.mts
 Verify_WorkoutPrograms [(WorkoutPrograms) Reusable Actions]=Action1\Script.mts
 Navigate_WorkoutPrograms [(WorkoutPrograms) Reusable Actions]=Action2\Script.mts
 Verify_MealPlans [(MealPlans) Reusabe Actions]=Action1\Script.mts
@@ -51,6 +50,7 @@ Verify_Cart [(Cart) Reusable Actions]=Action1\Script.mts
 Navigate_Cart [(Cart) Reusable Actions]=Action2\Script.mts
 Redirect_Home [(Home) Reusable Actions]=Action7\Script.mts
 Verify_FitnessBlenderHeader [(Home) Reusable Actions]=Action8\Script.mts
+Navigate_WorkoutVideos [(WorkoutVideos) Reusable Actions]=Action2\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
