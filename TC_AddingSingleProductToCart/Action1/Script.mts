@@ -69,9 +69,9 @@ If (StrComp(strRunActionStatus, "0", 1) <> 0) Then
 End If
 
 strRunActionStatus = "9999"
-strRunActionStatus = RunAction ("Check_ItemsAmountInInBagIcon [(Cart) Reusable Actions]", oneIteration)
+strRunActionStatus = RunAction ("Compare_ItemsAmount [(Cart) Reusable Actions]", oneIteration)
 If (StrComp(strRunActionStatus, "0", 1) <> 0) Then
-    fnReportStep "Fail", "Check_ItemsAmountInBagIcon action failed" , "Returned value: " & strRunActionStatus , ""
+    fnReportStep "Fail", "Compare_ItemsAmount action failed" , "Returned value: " & strRunActionStatus , ""
     ExitActionIteration "AddingSingleProductToCart.8"
 End If
 

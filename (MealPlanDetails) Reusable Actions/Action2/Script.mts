@@ -16,7 +16,7 @@ If Browser("WebBrowser").Page("MealPlanDetails").WebElement("ProgramDetails").We
 Else
 	fnReportStepEx "Fail", "Click on Add to Bag button", "Add to Bag button NOT exist", Browser("WebBrowser"), "true"
 	ExitActionIteration "Add_To_Cart.1"
-End I	f
+End If
 'Verify redirection to Cart subpage
 If Browser("WebBrowser").Page("Cart").Exist(15) Then
 	fnReportStepEx "Pass", "Verify redirection to Cart subpage", "Cart subpage is displayed", Browser("WebBrowser"), "true"

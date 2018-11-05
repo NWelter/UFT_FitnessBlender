@@ -27,8 +27,8 @@ Verify_EmptyCart [(Cart) Reusable Actions]=Action1\Script.mts
 Add_To_Cart [(MealPlanDetails) Reusable Actions]=Action2\Script.mts
 Verify_Cart [(Cart) Reusable Actions]=Action3\Script.mts
 Check_Item [(Cart) Reusable Actions]=Action4\Script.mts
-Check_ItemsAmountInInBagIcon [(Cart) Reusable Actions]=Action5\Script.mts
 Login [(Main) Reusable Actions]=Action4\Script.mts
+Compare_ItemsAmount [(Cart) Reusable Actions]=Action5\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile

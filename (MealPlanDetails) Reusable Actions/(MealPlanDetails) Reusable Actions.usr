@@ -12,9 +12,9 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
+Verify_Cart [(Cart) Reusable Actions]=Action3\Script.mts
 Verify_MealPlanDetails=Action1\Script.mts
 Add_To_Cart=Action2\Script.mts
-Verify_Cart [(Cart) Reusable Actions]=Action3\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -52,12 +52,12 @@ Parameters.mtr=
 Action0\Script.mts=
 Action0\Resource.mtr=
 Action0\ObjectRepository.bdb=
+Action3\Script.mts=
+Action3\Resource.mtr=
+Action3\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
 Action2\Script.mts=
 Action2\Resource.mtr=
 Action2\ObjectRepository.bdb=
-Action3\Script.mts=
-Action3\Resource.mtr=
-Action3\ObjectRepository.bdb=
