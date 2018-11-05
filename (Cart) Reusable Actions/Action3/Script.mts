@@ -15,7 +15,7 @@ Dim arrPageElements, arrCheckResults
 arrPageElements = Array(Browser("WebBrowser").Page("Cart").WebElement("ShoppingCartHeader"),_ 
 						Browser("WebBrowser").Page("Cart").WebElement("ShoppingCartPanel"),_ 
 						Browser("WebBrowser").Page("Cart").WebElement("ShoppingCartPanel").WebElement("CartPanelHeader"),_ 
-						Browser("WebBrowser").Page("Cart").WebElement("ShoppingCartPanel").Link("ItemHeader"),_ 
+						Browser("WebBrowser").Page("Cart").WebElement("ShoppingCartPanel").Link("ItemLink"),_  
 						Browser("WebBrowser").Page("Cart").WebElement("ShoppingCartPanel").WebElement("RemoveIcon"),_ 
 						Browser("WebBrowser").Page("Cart").WebElement("ShoppingCartPanel").WebElement("Price"),_ 
 						Browser("WebBrowser").Page("Cart").WebElement("ShoppingCartPanel").WebElement("OrderTotal"),_ 

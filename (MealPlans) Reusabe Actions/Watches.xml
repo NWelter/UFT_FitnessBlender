@@ -1,1 +1,4 @@
-﻿<Properties />
+﻿<Properties>
+  <WatchEntry0 value="strMealPlanLink" />
+  <WatchEntry1 value="strMealPlanPageURL" />
+</Properties>

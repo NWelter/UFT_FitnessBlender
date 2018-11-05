@@ -15,6 +15,8 @@ Action0=Action0\Script.mts
 Verify_EmptyCart=Action1\Script.mts
 Navigate_Cart=Action2\Script.mts
 Verify_Cart=Action3\Script.mts
+Check_Item=Action4\Script.mts
+Check_ItemsAmountInBagIcon=Action5\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -61,3 +63,9 @@ Action2\ObjectRepository.bdb=
 Action3\Script.mts=
 Action3\Resource.mtr=
 Action3\ObjectRepository.bdb=
+Action4\Script.mts=
+Action4\Resource.mtr=
+Action4\ObjectRepository.bdb=
+Action5\Script.mts=
+Action5\Resource.mtr=
+Action5\ObjectRepository.bdb=

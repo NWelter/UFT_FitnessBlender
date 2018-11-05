@@ -31,7 +31,7 @@ If (StrComp(strRunActionStatus, "0", 1) <> 0) Then
     ExitActionIteration "AddingWorkoutVideoToFavorites.2"
 End If
 
-' Step 3. Set login and password on login form fields. Click on Sign In button.
+' Step 3. Set login <<strUsername>> and password <<strPassword>> on login form fields. Click on Sign In button.
 strRunActionStatus = "9999"
 strRunActionStatus = RunAction ("SignIn [(Main) Reusable Actions]", oneIteration, Parameter("strUsername"), Parameter("strPassword"))
 If (StrComp(strRunActionStatus, "0", 1) <> 0) Then

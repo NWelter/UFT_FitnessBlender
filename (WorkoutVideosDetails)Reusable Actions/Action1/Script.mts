@@ -16,7 +16,8 @@ Dim arrPageElements, arrCheckResults
 arrPageElements = Array(Browser("WebBrowser").Page("WorkoutVideosDetails").WebElement("WorkoutDetailsPanel"),_ 
 						Browser("WebBrowser").Page("WorkoutVideosDetails").WebButton("AddToFavorites"),_
 						Browser("WebBrowser").Page("WorkoutVideosDetails").WebButton("AddToCalendar"),_ 
-						Browser("WebBrowser").Page("WorkoutVideosDetails").WebElement("VideoHeader"))
+						Browser("WebBrowser").Page("WorkoutVideosDetails").WebElement("VideoHeader"),_ 
+						Browser("WebBrowser").Page("WorkoutVideosDetails").WebElement("WorkoutVideoArticleBody"))
 
 arrCheckResults = fnCheckPageElements(arrPageElements)
 

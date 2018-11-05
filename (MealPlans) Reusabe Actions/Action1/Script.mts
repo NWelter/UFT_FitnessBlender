@@ -16,7 +16,9 @@ Dim arrPageElements, arrPageElementsRightDown, arrCheckResults
 arrPageElements = Array(Browser("WebBrowser").Page("MealPlans").WebElement("MealPlansHeader"),_ 
 						Browser("WebBrowser").Page("MealPlans").WebElement("MainSection"),_
 						Browser("WebBrowser").Page("MealPlans").WebElement("CalendarPlansHeader"),_ 
-						Browser("WebBrowser").Page("MealPlans").WebElement("EbookPlansHeader"),_ 	
+						Browser("WebBrowser").Page("MealPlans").WebElement("CalendarPlansSection"),_ 	
+						Browser("WebBrowser").Page("MealPlans").WebElement("EbookPlansHeader"),_ 
+						Browser("WebBrowser").Page("MealPlans").WebElement("EbookPlansSection"),_	
 						Browser("WebBrowser").Page("MealPlans").WebElement("FeaturedHeader"),_ 
 						Browser("WebBrowser").Page("MealPlans").WebElement("FeaturedSidebar"))
 

@@ -1,1 +1,9 @@
-﻿<Properties />
+﻿<Properties>
+  <WatchEntry0 value="strCurrentItemLink" />
+  <WatchEntry1 value="Parameter(&quot;strItemLink&quot;)" />
+  <WatchEntry2 value="objItemsLinks" />
+  <WatchEntry3 value="Browser(&quot;WebBrowser&quot;).Page(&quot;Cart&quot;).WebElement(&quot;ShoppingCartPanel&quot;).Link(&quot;ItemLink&quot;).GetROProperty( &quot;href&quot;)" />
+  <WatchEntry4 value="intAmountInBagIcon" />
+  <WatchEntry5 value="intNumberOfItemsInCart" />
+  <WatchEntry6 value="objItemsLinks" />
+</Properties>

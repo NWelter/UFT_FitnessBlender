@@ -16,25 +16,25 @@ Set objObject = Description.Create()
 	objObject("micclass").value = "Link"
 	Set objVideoLinks = Browser("WebBrowser").Page("Favorites").WebElement("FavoriteVideosSection").ChildObjects(objObject)
 
-' Check if proper Video ID is added to favorites.
+' Check if valid Video ID is added to favorites.
 If Browser("WebBrowser").Page("Favorites").WebElement("FavoriteVideosSection").Link("FavoriteVideo").Exist(5) Then
 	For i = 0 To objVideoLinks.Count -1  
 		strCurrentVideoID = Trim(objVideoLinks(i).GetROProperty("html id"))
 			If strCurrentVideoID = Parameter("strVideoLinkID") Then
 				Browser("WebBrowser").Page("Favorites").WebElement("FavoriteVideosSection").Object.scrollIntoView
-				fnReportStepEx "Pass", "Check if proper Video ID is added to favorites.",_ 
+				fnReportStepEx "Pass", "Check if valid Video ID is added to favorites.",_ 
 				"Specified Video is added to favorites. Current Video ID is: " & strCurrentVideoID , Browser("WebBrowser"), "true"
 				Exit For	
 			End If
 	Next
 		If strCurrentVideoId <> Parameter("strVideoLinkID") Then
 				Browser("WebBrowser").Page("Favorites").WebElement("FavoriteVideosSection").Object.scrollIntoView
-				fnReportStepEx "Fail", "Check if proper Video ID is added to favorites.",_ 
+				fnReportStepEx "Fail", "Check if valid Video ID is added to favorites.",_ 
 				"Specified Video is NOT added to favorites.", Browser("WebBrowser"), "true"
 				ExitActionIteration "Check_VideoID.2"		
 		End If
 Else
-	fnReportStepEx "Fail", "Check if proper Video ID is added to favorites.", "Video link is NOT display", Browser("WebBrowser"), "true"
+	fnReportStepEx "Fail", "Check if valid Video ID is added to favorites.", "Video link is NOT display", Browser("WebBrowser"), "true"
 	 ExitActionIteration "Check_VideoID.1"	
 End If
 
