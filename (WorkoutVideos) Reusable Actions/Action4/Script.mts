@@ -14,27 +14,27 @@ Reporter.Filter = rfDisableAll
 Dim strRunActionStatus, strVideoLinkTitle, strVideoHeader
 
 
-'Click on first Workout Video link
-Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").SetTOProperty "outertext", ".*"
-If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").Exist(5) Then
+'Click on Workout Video link
+Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").SetTOProperty "outertext", ".*"
+If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Exist(5) Then
 	
 	'Get title from video link 
-	strVideoLinkTitle = Trim(Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").WebElement("VideoTitle").GetROProperty("outertext"))
+	strVideoLinkTitle = Trim(Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").WebElement("VideoTitle").GetROProperty("outertext"))
 	
 	'Get ID from video link to <<strVideoLinkID>>
-	Parameter ("strVideoLinkID") = Trim(Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").GetROProperty("html id"))	
+	Parameter ("strVideoLinkID") = Trim(Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").GetROProperty("html id"))	
 	
-	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").Click
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Click
 Else
 	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Object.scrollIntoView
-	fnReportStepEx "Fail", "Click on first workout video link", "Workout video link NOT exist", Browser("WebBrowser"), "true"
+	fnReportStepEx "Fail", "Click on workout video link", "Workout video link NOT exist", Browser("WebBrowser"), "true"
 	ExitActionIteration "Select_Video.1"
 End If
 
 If Browser("WebBrowser").Page("WorkoutVideosDetails").WebElement("WorkoutDetailsPanel").Exist(10) Then
-	fnReportStepEx "Pass", "Click on first workout video link", "Workout video details subpage is displayed", Browser("WebBrowser"), "true"
+	fnReportStepEx "Pass", "Click on workout video link", "Workout video details subpage is displayed", Browser("WebBrowser"), "true"
 Else 
-	fnReportStepEx "Fail", "Click on first workout video link", "Workout video details subpage is NOT displayed", Browser("WebBrowser"), "true"
+	fnReportStepEx "Fail", "Click on workout video link", "Workout video details subpage is NOT displayed", Browser("WebBrowser"), "true"
 	ExitActionIteration "Select_Video.2"
 End If
 	

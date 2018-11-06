@@ -1,2 +1,3 @@
-﻿RunAction "AddingWorkoutVideoToFavorites", oneIteration, Parameter("strUsername"), Parameter("strPassword"), Parameter("strBrowser"), Parameter("strURL"), Parameter("strIconColor"), Parameter("strBorderColor")
-RunAction "Recovery", oneIteration, Parameter("strBrowser"), Parameter("strURL"), Parameter("strUsername"), ""
+﻿RunAction "SetUp", oneIteration, Parameter("strBrowser"), Parameter("strURL"), Parameter("strUsername"), Parameter("strPassword")
+RunAction "AddingWorkoutVideoToFavorites", oneIteration, Parameter("strUsername"), Parameter("strPassword"), Parameter("strBrowser"), Parameter("strURL"), Parameter("strIconColor"), Parameter("strBorderColor")
+RunAction "Recovery", oneIteration

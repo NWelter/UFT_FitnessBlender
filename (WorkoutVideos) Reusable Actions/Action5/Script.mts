@@ -14,21 +14,24 @@ Reporter.Filter = rfDisableAll
 
 Dim strCurrentIconColor, strCurrentBorderColor
 
+'Select Workout Video by index:
+Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").SetTOProperty "index", 1
+
 ' Hover over Workout Video from the list
-If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").Exist(5) Then
+If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Exist(5) Then
 	Setting.WebPackage("ReplayType") = 2
-	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").FireEvent("onmouseover")
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").FireEvent("onmouseover")
 	
 	'Get ID from video link to <<strVideoLinkID>>
-	Parameter ("strVideoLinkID") = Trim(Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").GetROProperty("html id"))
+	Parameter ("strVideoLinkID") = Trim(Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").GetROProperty("html id"))
 Else
-	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").Object.scrollIntoView
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Object.scrollIntoView
 	fnReportStepEx "Fail", "Hover over Workout Video from the list and click on Heart icon.", "Workout Video is NOT displayed", Browser("WebBrowser"), "true"
 	ExitActionIteration "Add_T0_Favorites_By_Icon.1"	
 End If
 
 ' Verify border color of selected video link
-strCurrentBorderColor = Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").GetROProperty("style/border-color")
+strCurrentBorderColor = Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").GetROProperty("style/border-color")
 If strCurrentBorderColor = Parameter ("strBorderColor") Then
 	fnReportStepEx "Pass", "Verify border color of selected video link.", "Border color is equal to: " & Parameter ("strBorderColor"), Browser("WebBrowser"), "true"
 Else
@@ -37,26 +40,29 @@ Else
 End If
 
 ' Click on Heart icon
-If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").WebButton("HeartIcon").Exist(5) Then
-	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").WebButton("HeartIcon").Click
+If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").WebButton("HeartIcon").Exist(5) Then
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").WebButton("HeartIcon").Click
 	Setting.WebPackage("ReplayType") = 1
-	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").Object.scrollIntoView
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Object.scrollIntoView
 	fnReportStepEx "Pass", "Click on Heart icon.", "Heart icon is displayed.", Browser("WebBrowser"), "true"	
 Else
-	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").Object.scrollIntoView
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Object.scrollIntoView
 	fnReportStepEx "Fail", "Click on Heart icon.", "Heart icon NOT exist.", Browser("WebBrowser"), "true"
 	ExitActionIteration "Add_To_Favorites_By_Icon.2"		
 End If
 
 ' Verify color of selected Heart icon
-strCurrentIconColor = Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").WebButton("HeartIcon").GetROProperty("style/color")
+strCurrentIconColor = Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").WebButton("HeartIcon").GetROProperty("style/color")
 If strCurrentIconColor = Parameter ("strIconColor") Then
-	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").Object.scrollIntoView
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Object.scrollIntoView
 	fnReportStepEx "Pass", "Verify color of selected Heart icon", "Heart icon color is equal to: " & Parameter ("strIconColor"), Browser("WebBrowser"), "true"
 Else 
-	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoSecond").Object.scrollIntoView
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Object.scrollIntoView
 	fnReportStepEx "Fail", "Verify color of selected Heart icon",_ 
 	"Heart icon color is NOT equal to: " & Parameter ("strIconColor") & VbCrLf & "Current icon color is: " & strCurrentIconColor, Browser("WebBrowser"), "true"
 End If
+
+' Back to initial object's property
+Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").SetTOProperty "index", 0
 
 ExitActionIteration "0"

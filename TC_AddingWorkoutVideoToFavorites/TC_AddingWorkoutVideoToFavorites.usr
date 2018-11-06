@@ -30,6 +30,7 @@ Verify_Favorites [(Favorites) Reusable Actions]=Action2\Script.mts
 Add_To_Favorites_By_Icon [(WorkoutVideos) Reusable Actions]=Action5\Script.mts
 Check_VideoID [(Favorites) Reusable Actions]=Action3\Script.mts
 Recovery=Action2\Script.mts
+SetUp=Action3\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile

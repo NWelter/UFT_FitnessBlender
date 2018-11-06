@@ -13,9 +13,9 @@ Reporter.Filter = rfDisableAll
 Dim strTitle : strTitle = ".*" & Parameter("strVideoTitle") & ".*"
 
 'Select workout video link with title text <<strVideoTitle>>
-Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").SetTOProperty "outertext", strTitle
-If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").Exist(5) Then
-	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("VideoFirst").Click
+Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").SetTOProperty "outertext", strTitle
+If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Exist(5) Then
+	Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Click
 Else
 	fnReportStepEx "Fail", "Select video link with title text: " & "'" & Parameter("strVideoTitle") & "'",_ 
 	"Workout video link with title text: " & "'" & Parameter("strVideoTitle") & "'" & " NOT exist", Browser("WebBrowser"), "true"
