@@ -10,7 +10,8 @@
 Option Explicit
 Reporter.Filter = rfDisableAll
 
-Dim arrPageElements, arrPageElementsRightDown, arrCheckResults
+Dim arrPageElements, arrPageElementsRightDown, arrCheckResults 
+Dim blnElementsAreDisplayed : blnElementsAreDisplayed = True
 
 ' Verify Meal Plans subpage main section content
 arrPageElements = Array(Browser("WebBrowser").Page("MealPlans").WebElement("MealPlansHeader"),_ 
@@ -30,7 +31,7 @@ If arrCheckResults(0) Then
 Else 
 	fnReportStepEx "Fail", "Click on Meal Plans subtab. Verify main section content.",_ 
 	"Meal Plans subpage is NOT displayed." & VbCrLf & " Current elements of main section are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_MealPlans.1"
+	blnElementsAreDisplayed = False
 End If
 
 ' Verify Meal Plans subpage right sidebar content
@@ -53,7 +54,11 @@ Else
 	Browser("WebBrowser").Page("MealPlans").WebElement("SocialMediaContainer").Object.scrollIntoView
 	fnReportStepEx "Fail", "Click on Meal Plans subtab. Verify rigth sidebar content.",_ 
 	"Meal Plans subpage is NOT displayed." & VbCrLf & " Current elements of right sidebar are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_MealPlans.2"
+	blnElementsAreDisplayed = False
+End If
+
+If NOT blnElementsAreDisplayed Then
+	ExitActionIteration "Verify_MealPlans.1"
 End If
 
 ExitActionIteration "0"

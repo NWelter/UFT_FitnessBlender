@@ -10,6 +10,7 @@ Option Explicit
 Reporter.Filter = rfDisableAll
 
 Dim arrPageElementsTop, arrPageElementsMiddle, arrPageElementsBottom, arrCheckResults
+Dim blnElementsAreDisplayed : blnElementsAreDisplayed = True
 
 ' Verify About subpage top sections content
 arrPageElementsTop = Array(Browser("WebBrowser").Page("About").WebElement("AboutImage"),_ 
@@ -22,7 +23,7 @@ If arrCheckResults(0) Then
 	fnReportStepEx "Pass", "Click on About tab." & VbCrLf & "Verify top section content.", "About subpage is displayed." & VbCrLf & "Current elements on top are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
 	fnReportStepEx "Fail", "Click on About tab. Verify top section content.", "About subpage is NOT displayed." & VbCrLf & " Current elements on top are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_About.1"
+	blnElementsAreDisplayed = False
 End If
 
 'Verify About subpage middle sections content
@@ -36,7 +37,7 @@ If arrCheckResults(0) Then
 	fnReportStepEx "Pass", "Click on About tab." & VbCrLf & "Verify middle section content.", "About subpage is displayed." & VbCrLf & "Current elements in the middle are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
 	fnReportStepEx "Fail", "Click on About tab." & VbCrLf & "Verify middle section content.", "About subpage is NOT displayed." & VbCrLf & " Current elements in the middle are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_About.2"
+	blnElementsAreDisplayed = False
 End If
 
 ' Verify About subpage bottom section content
@@ -53,7 +54,11 @@ If arrCheckResults(0) Then
 Else 
 	Browser("WebBrowser").Page("About").WebElement("InfoText").Object.scrollIntoView
 	fnReportStepEx "Fail", "Click on About tab." & VbCrLf &  "Verify bottom section content.", "About subpage is NOT displayed." & VbCrLf & " Current elements on the bottom are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_About.3"
+	blnElementsAreDisplayed = False
+End If
+
+If NOT blnElementsAreDisplayed Then
+	ExitActionIteration "Verify_About.1"
 End If
 
 ExitActionIteration "0"

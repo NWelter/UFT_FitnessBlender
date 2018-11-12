@@ -12,11 +12,11 @@ DevelopTool=AQT
 
 [Actions]
 Action0=Action0\Script.mts
-Hover_WorkoutsAndProgramsDropdown [(Home) Reusable Actions]=Action4\Script.mts
-Navigate_MealPlans=Action2\Script.mts
 Verify_MealPlans=Action1\Script.mts
-Verify_MealPlanDetails [(MealPlanDetails) Reusable Actions]=Action1\Script.mts
+Navigate_MealPlans=Action2\Script.mts
+Hover_WorkoutsAndProgramsDropdown [(Home) Reusable Actions]=Action4\Script.mts
 Select_CalendarMealPlanByHeader=Action3\Script.mts
+Verify_MealPlanDetails [(MealPlanDetails) Reusable Actions]=Action1\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -54,15 +54,15 @@ Parameters.mtr=
 Action0\Script.mts=
 Action0\Resource.mtr=
 Action0\ObjectRepository.bdb=
-Action4\Script.mts=
-Action4\Resource.mtr=
-Action4\ObjectRepository.bdb=
-Action2\Script.mts=
-Action2\Resource.mtr=
-Action2\ObjectRepository.bdb=
 Action1\Script.mts=
 Action1\Resource.mtr=
 Action1\ObjectRepository.bdb=
+Action2\Script.mts=
+Action2\Resource.mtr=
+Action2\ObjectRepository.bdb=
+Action4\Script.mts=
+Action4\Resource.mtr=
+Action4\ObjectRepository.bdb=
 Action3\Script.mts=
 Action3\Resource.mtr=
 Action3\ObjectRepository.bdb=

@@ -10,6 +10,7 @@ Option Explicit
 Reporter.Filter = rfDisableAll
 
 Dim arrPageElements, arrPageElementsRightDown, arrCheckResults
+Dim blnElementsAreDisplayed : blnElementsAreDisplayed = True
 
 ' Verify Blog subpage main section content
 arrPageElements = Array (Browser("WebBrowser").Page("Blog").WebElement("BlogHeader"),_ 
@@ -20,10 +21,12 @@ arrPageElements = Array (Browser("WebBrowser").Page("Blog").WebElement("BlogHead
 arrCheckResults = fnCheckPageElements(arrPageElements)
 
 If arrCheckResults(0) Then
-	fnReportStepEx "Pass", "Click on Blog tab. Verify main section content.", "Blog subpage is displayed." & VbCrLf & "Current elements of main section are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
+	fnReportStepEx "Pass", "Click on Blog tab. Verify main section content.",_ 
+	"Blog subpage is displayed." & VbCrLf & "Current elements of main section are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
-	fnReportStepEx "Fail", "Click on Blog tab. Verify main section content.", "Blog subpage is NOT displayed." & VbCrLf & " Current elements of main section are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_Blog.1"
+	fnReportStepEx "Fail", "Click on Blog tab. Verify main section content.",_ 
+	"Blog subpage is NOT displayed." & VbCrLf & " Current elements of main section are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
+	blnElementsAreDisplayed = False
 End If
 
 ' Verify Blog subpage right sidebar content
@@ -40,10 +43,16 @@ arrCheckResults = fnCheckPageElements(arrPageElementsRightDown)
 
 If arrCheckResults(0) Then
 	Browser("WebBrowser").Page("Blog").WebElement("SocialMediaContainer").Object.scrollIntoView
-	fnReportStepEx "Pass", "Click on Blog tab. Verify right sidebar content.", "Blog subpage is displayed." & VbCrLf & "Current elements of the right sidebar are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
+	fnReportStepEx "Pass", "Click on Blog tab. Verify right sidebar content.",_ 
+	"Blog subpage is displayed." & VbCrLf & "Current elements of the right sidebar are displayed: " & arrCheckResults(1), Browser("WebBrowser"), "true"
 Else 
-	fnReportStepEx "Fail", "Click on Blog tab. Verify right sidebar content.", "Blog subpage is NOT displayed." & VbCrLf & " Current elements of the right sidebar are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_Blog.2"
+	fnReportStepEx "Fail", "Click on Blog tab. Verify right sidebar content.",_ 
+	"Blog subpage is NOT displayed." & VbCrLf & " Current elements of the right sidebar are NOT displayed: " & arrCheckResults(2), Browser("WebBrowser"), "true"
+	blnElementsAreDisplayed = False
+End If
+
+If NOT blnElementsAreDisplayed Then
+	ExitActionIteration "Verify_Blog.1"	
 End If
 
 ExitActionIteration "0"

@@ -10,6 +10,7 @@ Option Explicit
 Reporter.Filter = rfDisableAll
 
 Dim arrPageElementsTop, arrPageElementsMiddle, arrPageElementsBottom, arrCheckResults
+Dim blnElementsAreDisplayed : blnElementsAreDisplayed = True
 
 ' Verify Healthy Living subpage top section content
 arrPageElementsTop = Array(Browser("WebBrowser").Page("HealthyLiving").WebElement("FitnessHeader"),_ 
@@ -23,7 +24,7 @@ If arrCheckResults(0) Then
 Else 
 	Browser("WebBrowser").Page("HealthyLiving").WebElement("FitnessSection").Object.scrollIntoView
 	fnReportStepEx "Fail", "Click on Healthy Living dropdown. Verify top section content.", "Healthy Living subpage is NOT displayed." & VbCrLf & "Current sections are NOT available: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_HealthyLiving.1"
+	blnElementsAreDisplayed = False
 End If
 
 ' Verify Healthy Living subpage middle section content
@@ -40,7 +41,7 @@ If arrCheckResults(0) Then
 Else 
 	Browser("WebBrowser").Page("HealthyLiving").WebElement("HealthSection").Object.scrollIntoView
 	fnReportStepEx "Fail", "Click on Healthy Living dropdown. Verify middle section content.", "Healthy Living subpage is NOT displayed." & VbCrLf & "Current sections are NOT available: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_HealthyLiving.2"
+	blnElementsAreDisplayed = False
 End If
 
 ' Verify Healthy Living subpage bottom section content
@@ -57,7 +58,11 @@ If arrCheckResults(0) Then
 Else 
 	Browser("WebBrowser").Page("HealthyLiving").WebElement("Before&AfterSection").Object.scrollIntoView
 	fnReportStepEx "Fail", "Click on Healthy Living dropdown. Verify bottom section content.", "Healthy Living subpage is NOT displayed." & VbCrLf & "Current sections are NOT available: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_HealthyLiving.3"
+	blnElementsAreDisplayed = False	
+End If
+
+If NOT blnElementsAreDisplayed Then
+	ExitActionIteration "Verify_HealthyLiving.1"
 End If
 
 ExitActionIteration "0"

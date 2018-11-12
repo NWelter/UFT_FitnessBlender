@@ -10,7 +10,7 @@ Option Explicit
 Reporter.Filter = rfDisableAll
 
 Dim arrPageElementsTop, arrPageElementsMiddle, arrPageElementsBottom, arrCheckResults
-
+Dim blnElementsAreDisplayed : blnElementsAreDisplayed = True
 
 ' Verify Workouts&Programs subpage top section content
 arrPageElementsTop = Array (Browser("WebBrowser").Page("Workouts&Programs").WebElement("NewestProgramsHeader"),_ 
@@ -26,7 +26,7 @@ If arrCheckResults(0) Then
 Else
 	Browser("WebBrowser").Page("Workouts&Programs").WebElement("NewestWorkoutVideoHeader").Object.scrollIntoView
 	fnReportStepEx "Fail", "Click on Workouts&Programs dropdown. Verify top section content.", "Workouts&Programs subpage is NOT displayed." & VbCrLf & "Current sections are NOT available: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_WorkoutsAndPrograms.1"	
+	blnElementsAreDisplayed = False
 End If
 
 ' Verify Workouts&Programs subpage middle section content
@@ -43,7 +43,7 @@ If arrCheckResults(0) Then
 Else
 	Browser("WebBrowser").Page("Workouts&Programs").WebElement("BestFatLossProgramsHeader").Object.scrollIntoView
 	fnReportStepEx "Fail", "Click on Workouts&Programs dropdown. Verify middle section content.", "Workouts&Programs subpage is NOT displayed." & VbCrLf & "Current sections are NOT available: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_WorkoutsAndPrograms.2"	
+	blnElementsAreDisplayed = False	
 End If
 
 ' Verify Workouts&Programs subpage bottom section content
@@ -62,7 +62,11 @@ If arrCheckResults(0) Then
 Else
 	Browser("WebBrowser").Page("Workouts&Programs").WebElement("StrengthWorkoutsHeader").Object.scrollIntoView
 	fnReportStepEx "Fail", "Click on Workouts&Programs dropdown. Verify bottom section content.", "Workouts&Programs subpage is NOT displayed." & VbCrLf & "Current sections are NOT available: " & arrCheckResults(2), Browser("WebBrowser"), "true"
-	ExitActionIteration "Verify_WorkoutsAndPrograms.3"	
+	blnElementsAreDisplayed = False
+End If
+
+If NOT blnElementsAreDisplayed Then
+	ExitActionIteration "Verify_WorkoutsAndPrograms.1"	
 End If
 
 ExitActionIteration "0"
