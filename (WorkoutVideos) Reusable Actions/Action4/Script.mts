@@ -15,6 +15,7 @@ Dim strRunActionStatus, strVideoLinkTitle, strVideoHeader
 
 
 'Click on Workout Video link
+Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").SetTOProperty "outertext", ".*"
 If Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").Exist(5) Then
 	
 	'Get title from video link 

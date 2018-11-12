@@ -62,4 +62,7 @@ Else
 	"Heart icon color is NOT equal to: " & Parameter ("strIconColor") & VbCrLf & "Current icon color is: " & strCurrentIconColor, Browser("WebBrowser"), "true"
 End If
 
+' Back to initial object's property
+Browser("WebBrowser").Page("WorkoutVideos").WebElement("WorkoutVideosSection").Link("Video").SetTOProperty "index", 0
+
 ExitActionIteration "0"

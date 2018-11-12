@@ -9,7 +9,7 @@
 '------------------------------------------------------------------------------------------------------------
 Option Explicit
 Reporter.Filter = rfDisableAll
-'
+
 Dim strRunActionStatus, objVideoLinks, objObject, strHeaderInfo, i
 
 ' 1.) Open <<browser>> and go to <<URL>>
